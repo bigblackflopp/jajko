@@ -14,7 +14,7 @@ void bubblesort(int *tab, int n)
     {
         for (int j=n-1; j>=1; j--)
             {
-                if (tab[j]<tab[j-1])
+                if (tab[j]>tab[j-1])
                     {
                         int bufor;
                         bufor=tab[j-1];
@@ -50,13 +50,13 @@ stop = clock();
 
 czas = (double)(stop-start)/ CLOCKS_PER_SEC;
 
-cout << "Czas bubble sortu to: "<< czas<< " sekund";
+cout << "Czas bubble sortu to: "<< czas<< " sekund"<<endl;
 cout << "Po sortowaniu: "<< endl;
 
 
 for (int i =0; i<ile; i++)
 {
-    cout <<tablica[i]< " ";
+    cout <<tablica[i]<< " ";
 }
 
     delete [] tablica;
