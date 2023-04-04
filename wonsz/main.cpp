@@ -148,11 +148,7 @@ int logika()
         {
             gameover=true;
         }
-
-
-
     }
-
 
 int main()
 {
@@ -175,6 +171,4 @@ int main()
     }
 
 }
-}
-
-
+} 
