@@ -2,7 +2,7 @@
 
 using namespace std;
 
-unsigned int a, b, ile, resztaa, resztab, wynik;
+int a, b, ile, resztaa, resztab, wynik;
 
 int main()
 {
@@ -10,24 +10,26 @@ int main()
     cin>> ile;
     if (ile<=10&&ile>=1)
     {
-        wynik=0;
+        for (int i=0; i<ile; i++)
+        {
         cin >> a;
         cin >> b;
-
+        if (a<0 || b<0) return 0;
         resztaa=(a%10);
         resztab=(b%10);
-        
-        wynik=resztaa*resztab
-
-        for (int i=1; i<resztab; i++)
+        if (resztab==0) cout << "1"<<endl;
+        else
         {
-            wynik = wynik*resztab
+        wynik=resztaa;
+        
+        for (int j=1; j<resztab; j++)
+        {
+            wynik = wynik*resztaa;
         }
         
-        cout << wynik;
-
+        cout << wynik%10<< endl;
     }
-
-
+    }
+    }
     return 0;
 }
