@@ -4,17 +4,18 @@ using namespace std;
 
 int ile, a, b;
 
-int nwd (int a, int b)
+int nwd (int c, int d)
 {
 	int pom;
-
-  	while(b!=0)
-	{
-        pom = b;
-    	b = a%b;
-    	a = pom;  
-  	}
-    return a;
+    
+	while(d!=0)
+    {
+		pom = d;
+		d = c%d;
+		c = pom;	
+	}
+	
+    return c;
 }
 
 int main()
@@ -23,11 +24,9 @@ int main()
 
     for (int i=0; i<ile; i++)
     {
-        cin>>a>>b;
-        if (0<=a<=1000000 && 0<=b<=1000000)
-        {
-        cout << nwd(a, b);
-        }
+        cin>>a;
+        cin>>b;
+        cout << nwd(a, b)<< endl;
     }
     return 0;
 }
