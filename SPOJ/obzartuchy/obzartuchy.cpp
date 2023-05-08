@@ -20,6 +20,5 @@ int main()
         cout <<ceil(pud)<<endl;
         k=0;
     }
-
     return 0;
     }
